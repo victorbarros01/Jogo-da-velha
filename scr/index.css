@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+/* botões */
+
+#menu-container button {
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  background: #e6e6e6;
+  color: black;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+#menu-container button:hover {
+  background: #b6b6b6;
+}
+
+/* jogo */
+
+#container {
+  display: flex;
+  width: 300px;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  border: 5px solid #000;
+  box-sizing: border-box;
+  flex: 1 1 33%;
+}
+
+#block1,
+#block2,
+#block3 {
+  border-top: none;
+}
+
+#block1,
+#block4,
+#block7 {
+  border-left: none;
+}
+
+#block3,
+#block6,
+#block9 {
+  border-right: none;
+}
+
+#block7,
+#block8,
+#block9 {
+  border-bottom: none;
+}
+
+/* Simbolos */
+
+.x {
+  font-size: 65px;
+  color: red;
+  display: inline-block;
+  line-height: 100px;
+}
+
+.o {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #0099ff;
+  display: inline-block;
+  margin-top: 17px;
+}
+
+/* Placar */
+
+#scoreboard {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#scoreboard h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-x {
+  color: red;
+  margin-right: 2px;
+}
+
+#title-o {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #0099ff;
+  position: relative;
+  top: 3px;
+  margin-right: 2px;
+  margin-left: 50px;
+}
+
+/* Mensagem de vitória */
+
+#background-winmsg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #00000050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#win-message {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  font-size: 150px;
+  padding: 50px 100px;
+  color: white;
+}
+
+.hidea {
+  display: none !important;
+}
