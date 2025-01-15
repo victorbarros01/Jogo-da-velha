@@ -31,7 +31,6 @@ for (let i = 0; i < boxes.length; i++) {
         if (secondPlayer == "ia") {
           iaPlayed();
           player2++;
-          console.log(player2);
         }
       } else {
         player2++;
